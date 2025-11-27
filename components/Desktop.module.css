@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* ====== LADO ESQUERDO ====== */
+.leftPanel {
+  flex: 1;
+  background: radial-gradient(circle at top left, #000, #020202);
+  background-image: 
+    radial-gradient(circle at top left, rgba(0, 255, 0, 0.05) 0%, transparent 50%),
+    url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+  position: relative;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.logoSquare {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #00ff66;
+}
+
+.logoText {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.welcomeText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00ff66;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.enterButton {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.enterButton:hover {
+  background: white;
+  color: black;
+}
+
+/* ====== LADO DIREITO ====== */
+.rightPanel {
+  flex: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.createTitle {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.createSubtitle {
+  color: #999;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%;
+  max-width: 400px;
+}
+
+.inputGroup label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  gap: 0.5rem;
+}
+
+.inputBox span {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.inputBox input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.registerButton {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.registerButton:hover {
+  background: #333;
+}
+/* animação suave */
+.fadeIn {
+  animation: fade 0.5s ease forwards;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* inverter os lados */
+.swap {
+  flex-direction: row-reverse;
+  transition: all 0.5s ease;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  transition: all 0.5s ease;
+}
